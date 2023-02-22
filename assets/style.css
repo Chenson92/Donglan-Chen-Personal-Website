@@ -3,9 +3,11 @@
     padding: 0;
     margin: 0;
 }
+
 :root {
     --txt-color: #FCC2FC;
 }
+
 body {
     background-color:#E8F3D6;
 }
@@ -21,25 +23,23 @@ h1 {
     display: inline-block;
     font-size: 48px;
 }
+
 h2 {
     margin-bottom: 20px;
     font-size: 36px;    
 }
 
-.contact-me h3{
-    margin-bottom: 20px;
-    margin-left: 50px;
-    font-size: 30px;
-}
-
-
-ul {
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px; 
-     
+}
+
+nav a:hover {
+  color: white;
+
 }
 
 li {
@@ -62,7 +62,7 @@ main {
 }
 
 p {
-    position:relative;
+ 
    font-size: 22px;
 }
 
@@ -75,44 +75,31 @@ figure {
     background-position: center;
 }
 
-
+/* About Me*/
 .about-me {
     margin-bottom: 20px;
     padding: 20px;
     height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #E5FDD1;
-    color: #FCC2FC;
+    color: var(--txt-color);
 }
-
 
 .selfie {
     float: right;
-    margin-right: 25px;
-    max-height: 350px;
-    border-radius: 20%;
-   
+    margin-right: 10%;
+    max-height: 50vh;
+    border-radius: 20%; 
 }
 
-
-
-
-/* Projects*/
+/* My Projects*/
 .my-projects {
    padding: 20px;
     margin-bottom: 20px;
     height: 180vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #E5FDD1;
-    color: #FCC2FC;
-}
-
-
-  :root {
-  --outer-space: #33393f;
-  --bright-turquoise: #2aefcb;
-  --gin: #e0eae4;
-  --heliotrope: #e866ec;
+    color: var(--txt-color);
 }
 
 .layout-container {
@@ -123,7 +110,7 @@ figure {
 
 .card-frame {
   flex: 0 1 30%;
-  border: 2px dashed var(--gin) ;
+  border: 2px dashed  #e0eae4 ;
   min-height: 200px;
   margin-bottom: 45px;
   flex-basis: 50vh;
@@ -131,12 +118,9 @@ figure {
 
 .card-title {
   position: relative;
-  color: var(--heliotrope);
+  color:  #e866ec;
   font-size: 22px;
 }
-
-
-
 
 .p1 {
   width:60vw;
@@ -148,6 +132,11 @@ figure {
     height:75vh;
   }
 
+main div a .p1:hover {
+  transform: scale(1.05);
+
+}
+
   .p2,
   .p3,
   .p4,
@@ -155,29 +144,43 @@ figure {
     width:30vw;
     height:30vh;
   }
-  
 
-  .contact-me {
-       
-    padding: 20px;
+ main div a .p2:hover,
+ main div a .p3:hover,
+ main div a .p4:hover,
+ main div a .p5:hover
+   {
+    transform: scale(1.05);
+  }
+
+  /* Contact Me*/
+  .contact-me {  
+    padding: 3%;
     height: 20vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #E5FDD1;
-    color: #FCC2FC;
+    color: var(--txt-color);
 }
 
 .contact-me p{
     display: inline-block;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin: 3% 15% 0 10%;
+}
+
+.contact-me h3{
+  margin-bottom: 0 10% 15% 0;
+  font-size: 30px;
 }
 
   footer {
-   
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;  
+    color: var(--txt-color);
   }
 
   /*Responsive design*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     main,
     header, 
     footer {
@@ -185,4 +188,4 @@ figure {
     }
     
   }
-    /* hovert, medium max*/
+   
