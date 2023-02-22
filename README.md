@@ -20,7 +20,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 ## Screenshot
-![Screenshot of index.html and css](./assets/Screenshot.png)
+![Screenshot of index.html and css](./assets/images/Screenshot%20.png)
 
 ## link to deployed application
 
