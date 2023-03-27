@@ -72,14 +72,23 @@ figure {
 .about-me {
     margin-bottom: 20px;
     padding: 20px;
-    height: 450px;
+    /*height: 450px;*/
     font-family: var(--font);
     background-color: #E5FDD1;
     color: var(--txt-color);
+    display:flex;
+    flex-direction: row;
 }
 
+.bio-column {
+  display: inline-block;
+  width: 20vw;
+}
+.selfie-wrapper {
+  text-align: center;
+  width: 70vw;
+}
 .selfie {
-    float: right;
     margin-right: 5%;
     max-height: 45vh;
     border-radius: 20%; 
@@ -94,7 +103,7 @@ figure {
   background-color: #E5FDD1;
   color: var(--txt-color);
 }
-
+/* not recommend "float" */
 .contact-me h2 {
 float:right;
 }
@@ -138,7 +147,6 @@ float:right;
 .p1 {
     width: 80vw;
     max-height:75vh;
-    display:
   }
 
 main section a .p1:hover {
@@ -180,4 +188,30 @@ main section a .p1:hover {
     }
     
   }
-   
+  
+  @media screen and (max-width: 756px){
+   header {
+    text-align: center;
+    height: 140px;
+   }
+   nav {
+    float: none;
+   }
+   .bio-column {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+   }
+   .selfie-wrapper {
+    text-align: center;
+    width:100%;
+   }
+   .self-wrapper {
+    display: inline;
+   }
+   .about-me {
+    flex-direction: column;
+   }
+  }
+    
+  
